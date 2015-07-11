@@ -9,7 +9,7 @@ feature 'Viewing links' do
     #Means that our test is targeting the homepage
     expect(page.status_code).to eq 200
     #Check the different page status !
-    within '.home__ul--li h3' do
+    within '.home__ul' do
     #Means that our test is targeting inside a css tag
     #If you wonder why I am doing __ and -- inside my css class checkout BEM Css
       expect(page).to have_content('Bob2Code')
