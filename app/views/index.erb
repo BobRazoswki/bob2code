@@ -1,0 +1,10 @@
+<h1>Homepage</h1>
+
+<ul class="home__ul">
+  <% links.each do |link| %>
+  <li class="home__ul--li">
+    <h3><%= link.title %></h3>
+    <%= link.url %>
+  </li>
+  <% end%>
+</ul>
