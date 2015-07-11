@@ -1,3 +1,4 @@
+require 'spec_helper'
 
 feature 'Viewing links' do
   scenario 'I can see existings links on the homepage' do
