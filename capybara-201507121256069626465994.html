@@ -7,20 +7,20 @@
   <h1>Homepage</h1>
 
   <ul class="home__ul">
-    <% @links.each do |link| %>
+    
       <li class="home__ul--li">
-        <h3><%= link.title %></h3>
-        <%= link.url %>
+        <h3></h3>
+        
       </li>
-    <% end%>
+    
   </ul>
 
   <form action="/links" method="post">
     <label>Title</label>
-    <input name="Title" type="text" >
+    <input name="Title" type="text" />
     <label>Url</label>
-    <input name="Url" type="text" >
-    <input name="Bob It !" type="submit" value="Bob It !">
+    <input name="Url" type="text" />
+    <input name="Bob It !" type="submit" value="Bob It !"/>
   </form>
 
 </body>

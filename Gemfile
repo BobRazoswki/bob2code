@@ -6,9 +6,11 @@ gem 'thin'
 gem 'data_mapper'
 gem 'dm-postgres-adapter'
 gem 'rack-flash3'
-gem 'rest_client'
+gem 'rest-client'
 
 group :development, :test do
 	gem 'capybara'
+	gem 'database_cleaner'
   gem 'rspec'
+	gem 'launchy'
 end
