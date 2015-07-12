@@ -11,6 +11,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    cowsay (0.2.0)
     daemons (1.2.3)
     data_mapper (1.2.0)
       dm-aggregates (~> 1.2.0)
@@ -126,6 +127,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt
   capybara
+  cowsay
   data_mapper
   database_cleaner
   dm-postgres-adapter
