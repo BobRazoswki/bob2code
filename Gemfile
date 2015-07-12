@@ -3,7 +3,6 @@ source "https://rubygems.org"
 ruby '2.2.1'
 
 gem 'sinatra'
-gem 'thin'
 gem 'bcrypt'
 gem 'data_mapper'
 gem 'dm-postgres-adapter'
@@ -16,4 +15,5 @@ group :development, :test do
 	gem 'database_cleaner'
   gem 'rspec'
 	gem 'launchy'
+	gem 'thin'
 end
