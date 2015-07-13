@@ -19,13 +19,7 @@ get '/' do
   erb :"/index"
 end
 
-post '/links' do
-  link = Link.new
-  link.attributes = {:url => params["Url"], :title => params["Title"]}
-  link.save
+post '/' do
+  Link.create(:url => params["Url"], :title => params["Title"])
   redirect to('/')
-end
-
-get 'links/new' do
-	erb :"links/new"
 end
