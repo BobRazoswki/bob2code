@@ -19,7 +19,29 @@ get '/' do
   erb :"/index"
 end
 
-post '/' do
+post '/links' do
   Link.create(:url => params["Url"], :title => params["Title"])
   redirect to('/')
 end
+
+get 'links/new' do
+	erb :"links/new"
+end
+
+delete '/links/:id' do
+  Link.get(params["id"]).destroy
+  redirect to('/')
+end
+
+get '/links/update' do
+  erb :'links/update'
+end
+
+post '/links/:id' do
+  Link.get(params["id"]).update(:url => params["Url_up"], :title => params["Title_up"])
+  redirect to('/')
+end
+
+# get '/links/:id' do
+#   redirect to('/')
+# end
